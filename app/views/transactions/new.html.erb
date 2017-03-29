@@ -1,0 +1,20 @@
+<h1>New Transaction</h1>
+
+
+<%= form_for @transaction do |f| %>
+    <%= f.label :car_type %><br>
+    <%= f.text_field :car_type %><br>
+    <br>
+    <%= f.label :first_visit %><br>
+    <%= f.check_box :first_visit %><br>
+    <br>
+    <%= f.label :bed_down %><br>
+    <%= f.check_box :bed_down %><br>
+    <br>
+    <%= f.label :mud_in_bed %><br>
+    <%= f.check_box :mud_in_bed %><br>
+    <br>
+    <div>Overall Price: </div>
+    <br>
+    <%= f.submit %>
+<% end %>

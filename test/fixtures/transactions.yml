@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  car_type: MyString
+  price: MyText
+  first_visit: false
+  bed_down: false
+  mud_in_bed: false
+
+two:
+  car_type: MyString
+  price: MyText
+  first_visit: false
+  bed_down: false
+  mud_in_bed: false

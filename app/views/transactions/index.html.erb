@@ -1,0 +1,11 @@
+<%= link_to "Create New Transaction", new_transaction_path %>
+
+<% @transactions.each_with_index do |transaction, index| %>
+    <h2>Transaction <%= index + 1 %></h2>
+    <div>Car Type: <%= transaction.car_type %></div>
+    <div>Price: <%= transaction.price %></div>
+    <div>First Visit: <%= transaction.first_visit %></div>
+    <div>Bed Down: <%= transaction.bed_down %></div>
+    <div>Mud in Bed: <%= transaction.mud_in_bed %></div>
+    <%= link_to "See Transaction", transaction %>
+<% end %>
